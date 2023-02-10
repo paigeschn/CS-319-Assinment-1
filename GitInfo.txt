@@ -1,0 +1,19 @@
+Git command cheat-sheet:
+git init - Create a new repository
+git status - Gives info about the repository's current state
+git add filename.txt - Tells git you would like to keep track of this file, replace "filename" with a period to add all changes. (git add .)
+git commit -m "message"- Sorta like setting a checkpoint in a video game, this "saves" your project folder so that you can revert back at any later date
+git push - Uploads/updates project to GitHub, syncing up the files so that the rest of your team can pull them
+git pull - Downloads project from GitHub, syncing up your local files
+git checkout -b NewBranchName - Switch between branches, or create a new branch
+
+Typical Git Workflow:
+1. Before you start working do a git pull to get any changes teammates have made on GitHub.
+2a. Go to a new branch to work on a feature using git checkout -b NewBranchName.
+2b. Go to a an existing branch to work on a feature using git checkout branchName.
+3. Code cool stuff and make sure stuff works.
+4. Ready to add code to GitHub? Good. Do a git add . and git commit -m "I added ...".
+5. Push your code to GitHub using git push. Repeat steps 4 and 5 until you are finished with the feature.
+6. Once you are done with your new feature we want to merge back to main.
+7. Switch to master using git checkout master, and to merge the branches together use git merge NewBranchName.
+8. Finally, git push to upload your code to GitHub.
